@@ -1,4 +1,6 @@
 {
+  "open": false,
+  "logLevel": "silent",
   "server": {
     "baseDir": ["./src", "./build/contracts","./"],
     "route" : {
