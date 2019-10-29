@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Leo's Auction</title>
+    
+    <!-- Bootstrap -->
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Auction</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="btn btn-outline-success my-2 my-sm-0" id="registerBtn">Register</button>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+          <div class="card" id="userInfo">
+              <img class="card-img-top" id="avatarUser" src="./images/user.png">
+              <div class="card-block">
+                  <h4 class="card-title user" id="nameUser">User</h4>
+                  <h4 class="card-title owner" id="nameOwner" style="display: none;">Owner</h4>
+              </div>
+              <div class="card-footer">
+                  <span class="float-right user" id="remainingToken" style="display: none;">Joined in 2013</span> 
+                  <button class="btn btn-info float-right btn-sm owner" id="revealBtn" style="display: none;">Reveal Winner</button>
+              </div>
+          </div>
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+          <div id="carouselExampleCaptions" class="carousel slide row" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="item1">
+                <img src="http://placehold.it/700x400" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Winner is : <span id="winner1">Unknown</span></p>
+                </div>
+              </div>
+              <div class="carousel-item" id="item2">
+                <img src="http://placehold.it/700x400" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Winner is: <span id="winner2">Unknown</span></p>
+                </div>
+              </div>
+              <div class="carousel-item" id="item3">
+                <img src="http://placehold.it/700x400" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Winner is : <span id="winner3">Unknown</span></p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        <div id="sneakerRow" class="row">
+          <!-- DATA LOAD HERE -->
+        </div>
+
+          <div id="template" style="display: none;">
+            <div class="card col-lg-4 col-md-6 mb-4">
+              <a href="#"><img class="card-img-top itemImg" src="http://placehold.it/700x400" alt=""></a>
+              <div class="card-body">
+                <p class="card-title">
+                  Item One
+                </p>
+                <h5 class="numberofToken">Number of Token</h5>
+              </div>
+              <div class="card-footer">
+                <div class="input-group mb-3 inputBid-group">
+                  <input type="text" class="form-control inputBid" placeholder="Enter your token" aria-label="enter your token" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary bid">Bid</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="shadow">
+      <div id="information">
+     <img src="https://i.ibb.co/J3BZXSF/69900292-676543199490063-7151066860748800000-n.jpg" alt="myPicture" id="mypic">
+     <div id="introduce">
+         <p>Leo Nguyen Anh Tuan Dinh</p>
+         <p>Student ID: 101201831</p>
+         <p>BlockChain Development Program</p>
+     </div>
+  </div>
+  </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

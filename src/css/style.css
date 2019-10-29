@@ -1,0 +1,113 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  background-color: #4c687b;
+}
+.container{
+  margin-top: 20px;
+}
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+.carousel-item img{
+  height: 570px;
+}
+.carousel-caption {
+  color: #000000;
+  background-color: #efefef;
+  opacity: 0.5;
+}
+#userInfo {
+  font-size: 1em;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  background-color:#f16975;
+  color:white;
+  text-align: center;
+}
+.card-block {
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  border: none;
+  border-top: 3px solid white;
+  box-shadow: none;
+}
+
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*Item*/
+.itemImg{
+  display: block;
+  width:100%;
+  height:200px;
+}
+.card-title {
+  font-size: 1.28571429em;
+  font-weight: 700;
+  line-height: 1.2857em;
+}
+
+.card-text {
+  clear: both;
+  margin-top: .5em;
+  color: rgba(0, 0, 0, .68);
+}
+
+.card-footer {
+  font-size: 1em;
+  position: static;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  padding: .75em 1em;
+  color: rgba(0, 0, 0, .4);
+  border-top: 1px solid rgba(0, 0, 0, .05) !important;
+  background: #fff;
+}
+/*Footer*/
+footer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  background-color: white;
+  
+  align-items: center;
+}
+#mypic {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  
+}
+#introduce{
+  padding: 10px;
+}
+#information{
+  display: flex;
+}
+#line{
+  width: 100px;
+  height: 2px;
+  background-color: blue;
+}
+#reference{
+  padding: 15px;
+  background-color: #e0adad;
+  width: 100%;
+  text-align: center;
+}
